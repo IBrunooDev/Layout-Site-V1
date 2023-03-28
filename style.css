@@ -1,0 +1,141 @@
+/* fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap');
+body {
+  background-image: url("./img/Wallpaper1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  animation: pan 10s infinite alternate linear;
+  /* animation para background */
+}
+
+
+@media (width >=500px) {
+  body {
+    padding: 0;
+  }
+}
+
+@keyframes pan {
+  100% {
+    background-position: 79% 30%;
+  }
+}
+
+.titulo {
+  color: rgba(0, 0, 0, 0.889);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-family: 'Great Vibes', cursive;
+}
+
+.typewriter h1 {
+  /* esconde o texto enquanto a animação não começa */
+  white-space: nowrap;
+  /* evita quebra de linha */
+  letter-spacing: .15em;
+  /* espaçamento entre letras */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000e5;
+  margin-top: 50px;
+  text-decoration: underline;
+  font-family: 'Lexend', sans-serif;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 9px;
+
+}
+
+.card {
+  background-color: #ffffff57;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 300px;
+
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 5px 0 rgba(0, 17, 255, 0.567);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: 'Lexend', sans-serif;
+}
+
+
+
+.Texto {
+  border: 16px 0 16px solid;
+  box-shadow: 0 8px 5px 0 rgba(0, 0, 0, 0.889);
+  border-radius: 10px;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 24px;
+  text-align: center;
+
+}
+
+.card p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  padding: 10px;
+  font-family: 'Courgette', cursive;
+}
+
+
+img {
+  border-radius: 90px;
+  width: 40%;
+  filter: drop-shadow(0 0 50px rgba(4, 0, 255, 0.557));
+  padding: 10px;
+}
+
+.foto-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Lexend', sans-serif;
+}
+
+
+.icons {
+  display: flex;
+  margin-left: 35px; 
+  transition: transform 1s;
+  transform: translateX(0) scale(0.5);
+}
+
+.icons:hover {
+  transform: translateX(10px) scale(1.2);
+  
+}
+
+.discord{
+  width: auto;
+}
+
